@@ -8,71 +8,27 @@ body {
     height: 100%;
     width: 100%;
 }
-.btn1{
-    margin: 10px;
-    padding: 12px 25px;
-    font-size: 18px;
-    border: 2px solid lightseagreen;
-    background-color: transparent;
-    font-weight: 600;
-    color: lightseagreen;
-    transition: all ease 0.3s;
-    position: relative;
+body{
+    padding: 20px;
 }
 
-.btn1::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background-color: lightseagreen;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,0);
-    transition: all ease 0.3s;
-    z-index: -1;
+
+#box{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+
+    background-color: crimson;
 }
 
-.btn1:hover::after{
-    width: 100%;
-}
 
-.btn1:hover{
-    color: white;
-}
-
-.btn2{
-    margin: 20px;
-    padding: 12px 25px;
-    font-size: 18px;
-    border: 2px solid lightseagreen;
-    background-color: transparent;
-    font-weight: 600;
-    color: lightseagreen;
-    transition: all ease 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn2::after{
-    content: '';
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background-color: lightseagreen;
+#circle{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
     border-radius: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    z-index: -1;
-    transition: all ease 0.4s;
 }
 
-.btn2:hover::after{
-    transform: translate(-50%,-50%) scale(3.5);
-
-}
-
-.btn2:hover{
-    color: white;
+button{
+    padding: 10px 20px;
 }
