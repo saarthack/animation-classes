@@ -8,27 +8,47 @@ body {
     height: 100%;
     width: 100%;
 }
-body{
-    padding: 20px;
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(216, 245, 255);
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-#box{
-    height: 200px;
-    width: 200px;
-    margin-top: 10px;
-
-    background-color: crimson;
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(167, 200, 212);
+    display:flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(128, 194, 216);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #circle{
     height: 200px;
     width: 200px;
-    background-color: lightblue;
+    background-color: crimson;
     border-radius: 50%;
 }
-
-button{
-    padding: 10px 20px;
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+}
+#star{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }

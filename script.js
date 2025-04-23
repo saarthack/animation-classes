@@ -1,31 +1,26 @@
-var tl = gsap.timeline()
-
-tl.to('#box',{
-    x:600,
-    duration:2,
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#page2',
+        markers:true ,
+        start:'top 40%',
+        end:'top 20%',
+        scrub:1
+    }
 })
 
-tl.to('#circle',{
-    x:600,
-    duration:2
-})
+tl.from('#box',{
+    x:-500,
+    duration:0.5,
+    opacity:0 ,
+},'a')
+tl.from('#star',{
+    x:500,
+    duration:0.5,
+    opacity:0 ,
+},'a')
 
-
-tl.pause()
-
-
-var btn1 = document.querySelector('#animate')
-var btn2 = document.querySelector('#pause')
-var btn3 = document.querySelector('#reset')
-
-btn1.addEventListener('click',function(){
-    tl.play()
-})
-
-btn2.addEventListener('click',function(){
-    tl.pause()
-})
-
-btn3.addEventListener('click',function(){
-    tl.restart()
+tl.from('#circle',{
+    scale:0,
+    duration:0.5,
+    opacity:0,
 })
