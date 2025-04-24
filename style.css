@@ -1,54 +1,64 @@
+@font-face {
+    font-family: japan;
+    src: url(./Tempting\ -\ PERSONAL\ USE\ ONLY.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
 }
 
-#page1{
+
+#page1 {
     height: 100%;
     width: 100%;
-    background-color: rgb(216, 245, 255);
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-#page2{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(167, 200, 212);
-    display:flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#page3{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(128, 194, 216);
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    background-color: azure;
 }
 
-#circle{
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+    position: relative;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+}
+
+#box {
     height: 200px;
     width: 200px;
     background-color: crimson;
-    border-radius: 50%;
 }
-#box{
-    height: 200px;
-    width: 200px;
-    background-color: lightseagreen;
+
+img {
+    height: 100%;
+    width: 15%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    object-fit: cover;
 }
-#star{
-    height: 200px;
-    width: 200px;
-    background-color: yellow;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+h1{
+    font-family: japan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0,0.2);
+    opacity: 0;
 }

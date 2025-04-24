@@ -1,26 +1,27 @@
+// Initialize Lenis
+const lenis = new Lenis({
+    autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+    console.log(e);
+});
+
 var tl = gsap.timeline({
-    scrollTrigger:{
-        trigger:'#page2',
-        markers:true ,
-        start:'top 40%',
-        end:'top 20%',
-        scrub:1
+    scrollTrigger: {
+        trigger: '#page2',
+        start: 'top 0%',
+        end: 'top -100%',
+        scrub: 1,
+        pin: true,
+        // markers:true 
     }
 })
 
-tl.from('#box',{
-    x:-500,
-    duration:0.5,
-    opacity:0 ,
-},'a')
-tl.from('#star',{
-    x:500,
-    duration:0.5,
-    opacity:0 ,
-},'a')
-
-tl.from('#circle',{
-    scale:0,
-    duration:0.5,
-    opacity:0,
+tl.to('img', {
+    width: '100%',
+})
+tl.to('h1', {
+    opacity: 1
 })
