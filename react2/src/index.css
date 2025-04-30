@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+button{
+    padding: 10px 20px;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(216, 244, 253);
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: linen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
